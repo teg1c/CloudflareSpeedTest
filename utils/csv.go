@@ -183,5 +183,6 @@ func (s DownloadSpeedSet) Print() {
 	}
 	if !noOutput() {
 		fmt.Printf("\n完整测速结果已写入 %v 文件，可使用记事本/表格软件查看。\n", Output)
+		fmt.Printf("\n完整测速结果已写入 %v 文件，可使用记事本/表格软件查看。\n", TextOutput)
 	}
 }
