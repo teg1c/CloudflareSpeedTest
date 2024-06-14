@@ -20,7 +20,7 @@ func ExportText(data []CloudflareIPData) {
 		return
 	}
 
-	file, err := os.OpenFile(TextOutput, os.O_CREATE|os.O_WRONLY|os.O_APPEND, 0644)
+	file, err := os.OpenFile(TextOutput, os.O_CREATE|os.O_WRONLY|os.O_TRUNC, 0644)
 	if err != nil {
 		fmt.Println("Error opening file:", err)
 		return
